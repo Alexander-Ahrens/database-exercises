@@ -1,8 +1,6 @@
 USE codeup_test_db;
 
 CREATE TABLE albums (
-    column1_name data_type,
-    column2_name data_type,
     id int(10),
     artist varchar(50),
     name varchar (25),
