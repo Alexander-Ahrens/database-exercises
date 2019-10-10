@@ -1,12 +1,11 @@
 USE codeup_test_db;
 
 CREATE TABLE albums (
-    id int(10),
-    artist varchar(50),
-    name varchar (25),
-    release_date(4),
-    sales float(1000),
-    genre varchar(20)
-
-    SHOW CREATE TABLE quotes;
+    id int UNSIGNED NOT NULL AUTO_INCREMENT,
+    artist VARCHAR(250) NOT NULL,
+    name VARCHAR (100) NOT NULL,
+    release_date INT(4) UNSIGNED,
+    sales FLOAT(5, 2) UNSIGNED,
+    genre VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
 );
